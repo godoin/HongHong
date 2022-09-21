@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 li, 
@@ -27,18 +27,18 @@ button {
 
 .btn-no-border {
   border-radius: none;
-  background-color: #fff;
+  background-color: #f7f7f7;
   border: none;
   font-size: 16px;
   transition: all 0.3s ease 0s;
 }
 
 .btn-border:hover {
-  background-color: #5a5b60;
+  background-color: #9898a3;
 }
 
 .btn-no-border:hover {
-  color: #5a5b60;
+  color: #9898a3;
 }
 
 /* Header */
@@ -46,13 +46,14 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
-  padding: 30px 220px 20px;
+  background: #f7f7f7;
+  padding: 30px 180px 20px;
+  border-bottom: 1px solid #26272c;
 }
 
 hr {
   position: relative;
-  width: 100%;
+  width: 1150px;
   margin: 0 auto;
 }
 
@@ -96,14 +97,209 @@ hr {
   margin-left: 10px;
 }
 
-/* Sub Header Section  */
+/* Sub-header Section  */
 .sub-header {
-  padding: 20px 190px;
+  padding: 20px 160px;
 }
 
 .sub-header .nav-links a {
   text-decoration: none;
 }
+
+/* Introduction Section  */
+.intro {
+  display: flex;
+  padding: 80px 205px;
+  color: #26272c;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-intro header {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.left-intro p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.left-intro button {
+  margin-top: 25px;
+}
+
+.right-img {
+  position: relative;
+}
+
+/* Content Banner Section  */
+.banner {
+  background-color: #26272c;
+  margin: 0 auto;
+  height: 250px;
+  padding-right: 100px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.banner .row {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.banner .content-col {
+  flex-basis: 31%;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 20px 20px 0px 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.banner .content-col img {
+  margin-left: 60px;
+  height: 100px;
+  width: 80px;
+  border-radius: 100%;
+  border: 2px solid #9898a3;
+  object-fit: cover;
+}
+
+.banner .content-col p {
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Content Collection Section  */
+.collection {
+  padding: 20px 190px;
+  margin: 0 auto;
+}
+
+.collection h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 35px;
+}
+
+.collection .message {
+  margin-top: 2px;
+  margin-left: 30px;
+  font-size: 16px;
+}
+.collection a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #26272c;
+  transition: all 0.3s ease 0s;
+}
+
+.collection a:hover {
+  color: #5a5b60;
+}
+
+.collection .row {
+  margin-left: 15px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.collection .row .content-col {
+  background-color: #9b9da7;
+  padding: 40px 100px;
+  border-radius: 20px;
+  margin-left: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.collection .row .content-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0, 0.5);
+}
+
+.collection .row .content-col h3 {
+  text-align: center;
+}
+
+.collection .row .content-col p {
+  text-align: center;
+}
+
+/* Join Section  */
+.join {
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/join.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.join h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 35px;
+}
+
+/* Footer Section  */
+
+.footer {
+  background-color: #26272c;
+  color: #fff;
+}
+
+.footer .row {
+  margin-left: 230px;
+  display: flex;
+  align-items: center;
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+
+.footer .row .content-col {
+  flex-basis: 25%;
+  margin-bottom: auto;
+}
+
+
+.footer .row .content-col ul li{
+  color: #fff;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer .row .content-col .title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 210px 60px;
+}
+
+.horizontal-line {
+  margin: 10px auto;
+  width: 1100px;
+  height: 2px;
+  background-color: #fff;
+}
+
+/* Login Page  */
+.login {
+  padding-left: 8%;
+}
+
+
 
 
 
