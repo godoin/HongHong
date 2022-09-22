@@ -53,7 +53,6 @@ button {
 
 hr {
   position: relative;
-  width: 1150px;
   margin: 0 auto;
 }
 
@@ -136,36 +135,27 @@ hr {
 /* Content Banner Section  */
 .banner {
   background-color: #26272c;
-  margin: 0 auto;
-  height: 250px;
-  padding-right: 100px;
-  width: 80%;
-  border-radius: 10px;
+  height: 400px;
+  width: 100%;
 }
 
 .banner .row {
-  margin: 5%;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .banner .content-col {
-  flex-basis: 31%;
-  margin-top: 5px;
-  margin-left: 20px;
-  padding: 20px 20px 0px 100px;
-  box-sizing: border-box;
-  transition: 0.5s;
+  margin-top: 50px;
+  margin-left: 10px;
+  padding: 50px 150px 50px;
 }
 
 .banner .content-col img {
-  margin-left: 60px;
-  height: 100px;
-  width: 80px;
+  height: 150px;
+  width: 120px;
   border-radius: 100%;
   border: 2px solid #9898a3;
   object-fit: cover;
+  margin-left: 30%;
 }
 
 .banner .content-col p {
@@ -237,8 +227,7 @@ hr {
   background-size: cover;
   text-align: center;
   padding: 100px 0;
-  width: 80%;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .join h1 {
@@ -284,12 +273,12 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 210px 60px;
+  padding: 5px 205px 60px;
 }
 
 .horizontal-line {
   margin: 10px auto;
-  width: 1100px;
+  width: 80%;
   height: 2px;
   background-color: #fff;
 }
