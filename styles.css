@@ -480,6 +480,16 @@ hr {
   padding: 10px 40px;
 }
 
+/* Categories Section  */
+.categories {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories header {
+  text-align: center;
+}
 
 
 
