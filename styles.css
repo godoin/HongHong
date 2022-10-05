@@ -29,12 +29,34 @@ button {
   transition: all 0.3s ease 0s;
 }
 
+.btn-border-md {
+  border-radius: 5px;
+  background-color: #26272c;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-no-border-md {
+  border-radius: 2px;
+  background-color: #26272c;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
 .btn-no-border {
   border-radius: none;
   background-color: #f7f7f7;
   border: none;
   font-size: 16px;
   transition: all 0.3s ease 0s;
+}
+
+.btn-border-md:hover {
+  background-color: #9898a3;
+}
+
+.btn-no-border-md:hover {
+  background-color: #9898a3;
 }
 
 .btn-border:hover {
@@ -52,6 +74,7 @@ button {
   align-items: center;
   background: #f7f7f7;
   padding: 30px 175px 20px;
+  width: 100%;
   border-bottom: 1px solid #26272c;
 }
 
@@ -103,7 +126,11 @@ hr {
 
 /* Sub-header Section  */
 .sub-header {
-  padding: 20px 150px;
+  margin: auto;
+  width: 80%;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-header .nav-links a {
@@ -113,6 +140,8 @@ hr {
 /* Introduction Section  */
 .intro {
   display: flex;
+  margin: auto;
+  width: 100%;
   color: #26272c;
   justify-content: center;
   align-items: center;
@@ -147,9 +176,10 @@ hr {
 /* Content Collection Section  */
 .collection {
   padding: 20px 190px;
-  margin: 0 auto;
+  margin: auto;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .collection h1 {
@@ -208,9 +238,9 @@ hr {
 .banner {
   background-color: #D9D9D9;
   color: #24252A;
-  margin: 0 auto;
+  margin: auto;
   height: 700px;
-  width: 78%;
+  width: 80%;
   border-radius: 10px;
   margin-top: 10px;
   display: flex;
@@ -256,7 +286,7 @@ hr {
   background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/images/join.jpg);
   background-position: center;
   background-size: cover;
-  width: 500px;
+  width: 40%;
   margin-left: 68px;
 }
 
@@ -339,7 +369,7 @@ hr {
 
 .horizontal-line {
   margin: 10px auto;
-  width: 1100px;
+  width: 70%;
   height: 2px;
   background-color: #fff;
 }
@@ -464,6 +494,7 @@ hr {
   background: #24252A;
   margin-top: 40px;
   padding: 10px 40px;
+  width: 100%;
   bottom: 0;
 }
 
@@ -480,17 +511,477 @@ hr {
   padding: 10px 40px;
 }
 
+.footer-st {
+  background-color: #D9D9D9;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  padding: 10px 60px 10px 60px;
+  margin-top: 40px;
+}
+
+.footer-st h3 {
+  color: #24252A;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 /* Categories Section  */
 .categories {
-  width: 80%;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .categories header {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.categories p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin: auto;
+}
+
+.container .row {
+  display: flex;
+  margin: 5%;
+  justify-content: space-evenly;
+}
+
+.container .row .row-col {
+  flex-basis: 25%;
+  margin: 0 -70px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 20px;
+  border: 12px solid #D9D9D9;
+  transition: all 0.5s ease 0s;
+}
+
+.container .row .row-col:hover {
+  border: 11px solid #3e3f43;
+}
+
+.container .row .row-col i {
+  text-align: center;
+  font-size: 90px;
+  margin: 30px 0;
+}
+
+.container .row .row-col h5 {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.container .row .row-col button {
+  margin: 40px 0;
+}
+
+/* Home Introduction Banner Section  */
+.home-intro-banner {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-intro-banner h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.home-intro-banner p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.home-intro-banner a {
+  margin-top: 20px;
+}
+
+/* Standard Search Bar Section */
+.search-container {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.search-container form .input-group {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container form .input-group .form-control {
+  width: 70%;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+/* Content Post Section  */
+.post-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.post-container .row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.post-container .row .row-col {
+  flex-basis: 28%;
+  margin: 0 -60px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 11px solid #D9D9D9;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px 10px 40px;
+}
+
+.post-container .row .row-col h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* Contact Section  */
+.contact-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.contact-container .row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-line {
+  border: 0;
+  margin: 0;
+  width: 1px;
+  height: 500px;
+  background-color: #24252A;
+}
+
+.contact-container .row .contact-col form .contact-details  {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.contact-container .row .contact-col form .contact-details .input{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: left;
+}
+
+.contact-container .row .contact-col form .contact-details .input input {
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #24252A;
+  width: 250px;
+}
+
+.contact-container .row .contact-col form .input span {
+  font-size: 22px;
+}
+
+.contact-container .row .contact-col form .message textarea {
+  width: 520px;
+  height: 120px;
+  font-size: 16px;
+  margin: 10px 0 20px 20px;
+  resize: none;
+  border: none;
+  border-bottom: 2px solid #24252A;
+}
+
+.contact-container .row .contact-col form .message span {
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.contact-container .row .contact-col form .submit button{
+  justify-content: right;
+}
+
+
+.contact-container .row .contact-col {
+  margin: 0px 30px 20px 30px;
+}
+.contact-container .row .contact-col h3 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.contact-container .row .contact-col p {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.contact-container .row .contact-col .contact-pair {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.contact-container .row .contact-col .contact-pair .icon {
+  min-width: 35px;
+  height: 35px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.contact-container .row .contact-col .contact-pair i {
+  font-size: 20px;
+}
+
+.contact-container .row .contact-col .contact-pair h5 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* Content Post Section  */
+.bc-container {
+  margin: auto;
+  width: 72%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pc-container {
+  margin: auto;
+  width: 72%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pc-container .row {
+  display: flex;
+}
+
+.pc-container .row .content-col {
+  display: flex;
+  flex-direction: row;
+}
+
+.pc-container .row .content-col i {
+  font-size: 35px;
+}
+
+.pc-container .row .content-col .icon {
+  min-width: 42px;
+  height: 42px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.pc-container .row .content-col h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.pc-container .horizontal-line {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #24252A;
+  margin-top: 20px;
+}
+
+.pc-container .header-details {
+  display: flex;
+  margin: 30px 0 0 25px;
+}
+
+.pc-container .header-details i {
+  font-size: 48px;
+}
+
+.pc-container .header-details h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.pc-container p {
+  font-size: 25px;
+  margin: 20px 0 0 20px;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.pc-container .fav-icon {
+  float: right;
+  margin-top: 40px;
+}
+
+.pc-container .fav-icon button {
+  display: flex;
+  background-color: #24252A;
+  border-radius: 30px;
+  padding: 5px 20px 5px 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.pc-container .fav-icon button:hover {
+  background-color: #9898a3;
+}
+
+
+.pc-container .fav-icon .icon {
+  min-width: 36px;
+  height: 36px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  margin-left: 20px;  
+}
+
+.pc-container .fav-icon i {
+  font-size: 24px;
+  color: #d9534f;
+}
+
+.pc-container .fav-icon span {
+  font-size: 20px;
+  margin: 2px 20px 0 30px;
+  color: #fff;
+}
+
+/* Comments Section */
+.ms-container {
+  margin: auto;
+  width: 72%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.ms-container .header-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ms-container .header-details h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 20px 0 0 15px;
+}
+
+.ms-container .row {
+  margin: 15px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ms-container .row .content-col {
+  margin: auto;
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 150px;
+  border: 2px solid #24252A;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.ms-container .action {
   text-align: center;
 }
 
+.ms-container button {
+  font-size: 16px;
+  margin: 20px 0 0 20px;
+}
+
+/* Profile View Section  */
+.pv-container {
+  margin: 70px auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 72%;
+}
+
+.pv-container header {
+  font-size: 45px;
+}
+
+.pv-container .icon {
+  width: 210px;
+  height: 180px;
+  background: #24252A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  margin-left: 20px;  
+}
+
+.pv-container .icon i {
+  font-size: 150px;
+  color: #fff;
+}
+
+.pv-container .user-details {
+  margin-top: 30px;
+}
+
+.pv-container .user-details h3 {
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 
 
