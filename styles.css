@@ -635,22 +635,31 @@ hr {
 }
 
 /* Post Pop-Up Section */
-.center, .pstp-container {
+.center, .content-pop {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.pstp-container {
+.content-pop {
+  opacity: 0;
+  visibility: hidden;
   width: 420px;
-  height: 400px;
+  height: 500px;
   background: #D9D9D9;
   border-radius: 5px;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+  z-index: 2;
 }
 
-.pstp-container form .header {
+.open-popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content-pop form .header {
+  position: relative;
   padding: 20px 20px 10px 20px;
   height: 68px;
   background: #24252A;
@@ -659,20 +668,54 @@ hr {
   box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
 }
 
-.pstp-container form .header h2 {
+.content-pop form .header h2 {
   color: white;
   font-weight: normal;
 }
 
-.pstp-container form .header .fa-times {
+.content-pop form .header .fa-times {
+  position: absolute;
+  right: 15px;
+  top: 15px;
   font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-.pstp-container form .content-row {
-  margin: 20px 0 0 10px;
+.content-pop form .header .fa-times:hover {
+  color: #D9D9D9;
 }
 
+.content-pop form .content-row {
+  margin: 20px 0 0 20px;
+}
 
+.content-pop form .content-row h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content-pop form .content-row textarea.title {
+  width: 90%;
+  height: 60px;
+  font-size: 16px;
+  margin: 10px 0 0px 5px;
+  resize: none;
+}
+
+.content-pop form .content-row textarea.message {
+  width: 90%;
+  height: 150px;
+  font-size: 16px;
+  margin: 10px 0 20px 5px;
+  resize: none;
+}
+
+.content-pop form .content-btn {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+}
 
 
 
@@ -794,8 +837,6 @@ hr {
 .post-container .row .row-col .actions .icon i.fa-comment:hover {
   color: #88a7f7;
 }
-
-
 
 /* Contact Section  */
 .contact-container {
@@ -1077,6 +1118,83 @@ hr {
   font-size: 16px;
   margin: 20px 0 0 20px;
 }
+
+/* Post Comment Popup Section  */
+.center, .content-cpop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-cpop {
+  opacity: 0;
+  visibility: hidden;
+  width: 420px;
+  height: 400px;
+  background: #D9D9D9;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+  z-index: 2;
+}
+
+.open-cpopup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.content-cpop form .header {
+  position: relative;
+  padding: 20px 20px 10px 20px;
+  height: 68px;
+  background: #24252A;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+}
+
+.content-cpop form .header h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.content-cpop form .header .fa-times {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.content-cpop form .header .fa-times:hover {
+  color: #D9D9D9;
+}
+
+.content-cpop form .content-row {
+  margin: 20px 0 0 20px;
+}
+
+.content-cpop form .content-row h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content-cpop form .content-row textarea.comment {
+  width: 90%;
+  height: 180px;
+  font-size: 16px;
+  margin: 10px 0 20px 5px;
+  resize: none;
+}
+
+.content-cpop form .content-btn {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+}
+
+
 
 /* Profile View Section  */
 .pv-container {

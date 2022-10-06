@@ -11,24 +11,16 @@
 <body>
   
   <!-- Post Pop-Up Section  -->
-  <section class="pstp-container">
-    <form action="#">
-      <div class="header">
-        <h2>Post Your Content</h2>
-        <label for="click" class="fas fa-times"></label>
-      </div>
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onClick="togglePopup()">&times;</div>
+      <h1>Title</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora odio ipsum ipsam recusandae, quia maiores temporibus atque voluptatem. Ullam dignissimos aperiam corporis. Alias, error delectus!</p>
+    </div>
+  </div>
 
-      <div class="content-row">
-        <h3>Confession Title</h3>
-        <textarea required="required"></textarea>
-      </div>
-      </div>
-      <div class="content-row">
-        <h3>Confession Message</h3>
-        <textarea required="required"></textarea>
-      </div>
-      <label for="click" class="close-btn">Submit Post</label>
-    </form>
+  <button onClick="togglePopup()">Show PopUp</button>
     
   </section>
 </body>
