@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,75 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/426c14851d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- Header Section  -->
   <section class="header">
     <div class="left-content">
-      <a href="#">
+      <a href="home.html">
         <h3 class="logo">Honghong</h3>
       </a>
       <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="categories.html ">Categories</a></li>
+        <li><a href="faq.html">FAQs</a></li>
       </ul>
     </div>
     <div class="right-content">
-      <a href="login.html"><button class="btn btn-no-border">Log In</button></a>
+      <a href=" login.html "><button class="btn btn-no-border">Log In</button></a>
       <a href="register.html"><button class="btn btn-border">Sign Up</button></a>
     </div>
   </section>
 
-  <!-- Breadcrumbs Section  -->
-  <section class="bc-container">
-    <h4>breadcrumbs > placeholder > here </h4>
+  <!-- Sub-header Section  -->
+  <section class="sub-header">
+    <div class="left-content">
+      <div class="content-col">
+        <button>
+          <i class="fa-solid fa-heart"></i>
+          <a href="#">Love+Relationships</a>
+        </button>
+      </div>
+      <div class="content-col">
+        <button>
+          <i class="fa-solid fa-book-skull"></i>
+          <a href="#">Confession+Secrets</a>
+        </button>
+      </div>
+      <div class="content-col">
+        <button>
+          <i class="fa-solid fa-face-angry"></i>
+          <a href="#">Hate </a>
+        </button>
+      </div>
+      <div class="content-col">
+        <button>
+          <i class="fa-solid fa-microphone"></i>
+          <a href="#">Opinion</a>
+        </button>
+      </div>
+      <div class="content-col">
+        <button>
+          <i class="fa-solid fa-landmark"></i>
+          <a href="#">Political </a>
+        </button>
+      </div>
+      <div class="content-col">
+        <button>
+          <i class="fa-solid fa-ghost"></i>
+          <a href="#">Scary</a>
+        </button>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="breadcrumbs">
+        <a href="home.html">Home</a>
+        <i class="fa-solid fa-angle-right"></i>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+    </ul>
   </section>
 
   <!-- Profile View Section  -->
@@ -39,26 +86,28 @@
     <div class="icon"><i class="fa-solid fa-user"></i></div>
     <div class="user-details">
       <h3>Username placeholder</h3>
-      <h3>Date account created</h3> 
+      <h3>Date account created</h3>
     </div>
+  </section>
 
-    <div class="actions">
-      <ul class="tabs">
-        <li class="active">Your Favorites</li>
-        <li>Your Posts</li>
-      </ul>
-    </div>
-
-    <div class="row">
-      <div class="content-col active">
-        <h3>Lorem ipsum dolor sit amet, cosectetur adipiscing elit. Duis at tincidunt ex, nonn malesuada orci Proin ipsum
-            tellus, mollis quis ipsum imperdiet, scelerisque laoreet nulla.</h3>
+  <!-- Tab Selectors Section  -->
+  <section class="tabs-container">
+    <div class="tabs">
+      <div class="tabs-actions">
+        <span class="tabs-toggle is-active">Selector 1</span>
+        <span class="tabs-toggle">Selector 2</span>
       </div>
-    </div>
-    <div class="row">
-      <div class="content-col">
-        <h3>Lorem ipsum dolor sit amet, cosectetur adipiscing elit. Duis at tincidunt ex, nonn malesuada orci Proin ipsum
-            tellus, mollis quis ipsum imperdiet, scelerisque laoreet nulla.</h3>
+      <div class="tabs-body">
+        <div class="tabs-content is-active">
+          <h2 class="tabs-title"> Title One</h2>
+          <p class="tabs-text">1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dolorem deleniti
+            iste corrupti et aliquam aliquid reiciendis tenetur minima culpa?</p>
+        </div>
+        <div class="tabs-content">
+          <h2 class="tabs-title"> Title Two</h2>
+          <p class="tabs-text">2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dolorem deleniti
+            iste corrupti et aliquam aliquid reiciendis tenetur minima culpa?</p>
+        </div>
       </div>
     </div>
   </section>
@@ -68,5 +117,7 @@
     <h3>@Honghong Confessions</h3>
     <h3>Web Application Development</h3>
   </section>
+  <script src="app.js"></script>
 </body>
+
 </html>

@@ -1,13 +1,28 @@
-let popUp = document.getElementsByClassName("pstp-container");
+const faqs = document.querySelectorAll(".faq")
 
-function openPost() {
-  popup.classList.add("open-pstp");
-}
+faqs.forEach(faq => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  })
+})
 
-function closePost() {
-  popup.classList.remove("open-pstp");
-}
+document.getElementById("openComment").addEventListener('click',
+function() {
+  document.querySelector('.cpop-container').style.display = 'flex';
+});
 
-function togglePopup() {
-  document.getElementById("pop-up-1").classList.toggle("active");
-}
+document.getElementById("closeComment").addEventListener('click',
+function() {
+  document.querySelector('.cpop-container').style.display = 'none';
+});
+
+
+document.getElementById("openPost").addEventListener('click',
+function() {
+  document.querySelector('.pstp-container').style.display = 'flex';
+});
+
+document.getElementById("closePost").addEventListener('click',
+function() {
+  document.querySelector('.pstp-container').style.display = 'none';
+});
