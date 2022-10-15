@@ -1,3 +1,4 @@
+// FAQs Module 
 const faqs = document.querySelectorAll(".faq")
 
 faqs.forEach(faq => {
@@ -6,23 +7,41 @@ faqs.forEach(faq => {
   })
 })
 
-document.getElementById("openComment").addEventListener('click',
-function() {
-  document.querySelector('.cpop-container').style.display = 'flex';
+// Chat Module
+const openChat = document.getElementById("openChat")
+const closeChat = document.getElementById("closeChat")
+const chatModal = document.getElementById("chat")
+
+openChat.addEventListener('click', () => {
+  chatModal.classList.add('show');
 });
 
-document.getElementById("closeComment").addEventListener('click',
-function() {
-  document.querySelector('.cpop-container').style.display = 'none';
+closeChat.addEventListener('click', () => {
+  chatModal.classList.remove('show');
 });
 
+// Post Module
+const openPost = document.getElementById("openPost")
+const closePost = document.getElementById("closePost")
+const postModal = document.getElementById("post")
 
-document.getElementById("openPost").addEventListener('click',
-function() {
-  document.querySelector('.pstp-container').style.display = 'flex';
+openPost.addEventListener('click', () => {
+  postModal.classList.add('show');
 });
 
-document.getElementById("closePost").addEventListener('click',
-function() {
-  document.querySelector('.pstp-container').style.display = 'none';
+closePost.addEventListener('click', () => {
+  postModal.classList.remove('show');
+});
+
+// Comment Module
+const openComment = document.getElementById("openComment")
+const closeComment = document.getElementById("closeComment")
+const commentModal = document.getElementById("comment")
+
+openComment.addEventListener('click', () => {
+  commentModal.classList.add('show');
+});
+
+CommentChat.addEventListener('click', () => {
+  commentModal.classList.remove('show');
 });
