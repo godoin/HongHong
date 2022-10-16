@@ -109,10 +109,10 @@ button {
   cursor: pointer;
 }
 
-#tip {
+#tipMid {
   position: absolute;
   left: 50%;
-  top: 1000px;
+  top: 10px;
   transform: translateX(-50%);
   background-color: #fff;
   color: #24252A;
@@ -120,11 +120,11 @@ button {
   padding: 10px 15px;
   border-radius: 7px;
   visibility: none;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease 0;
   opacity: 0;
 }
 
-#tip::before {
+#tipMid::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -137,7 +137,7 @@ button {
   border-bottom: 0px solid transparent;
 }
 
-#tooltip:hover #tip {
+#tooltip:hover #tipMid {
   top: -40px;
   visibility: show;
   opacity: 1;
@@ -1048,6 +1048,7 @@ hr {
 }
 
 .post-container .row .row-col .actions .icon {
+  position: relative;
   min-width: 42px;
   height: 42px;
   background: #24252A;
@@ -1185,6 +1186,7 @@ hr {
 }
 
 .contact-container .row .contact-col .contact-pair {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
