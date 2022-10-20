@@ -547,10 +547,10 @@ hr {
 .team-container .row .content-col {
   flex-basis: 21%;
   margin: 0 20px;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 10px 40px 10px;
   background-color: #fff;
   border: 1px solid #1E3231;
-  border-radius: 8px;
+  border-radius: 20px;
   transition: all 0.3s ease 0s;
 }
 
@@ -588,7 +588,7 @@ hr {
 /* Join Section  */
 .join {
   margin: 30px auto;
-  background-color: #fff;
+  background-color: #1E3231;
   background-position: center;
   background-size: cover;
   width: 65%;
@@ -604,12 +604,12 @@ hr {
 }
 
 .join header {
-  color: #24252A;
+  color: #F6C0D0;
   font-size: 40px;
 }
 
 .join h4 {
-  color: #5a5b60;
+  color: #fff;
   font-weight: 400;
   font-size: 20px;
 }
@@ -891,12 +891,12 @@ hr {
 }
 
 .container .row .row-col {
-  flex-basis: 25%;
+  flex-basis: 23%;
   margin: 0 -70px;
   box-sizing: border-box;
   background: #fff;
   border-radius: 20px;
-  border: 1px solid #1E3231;
+  border: 2px solid #1E3231;
   transition: all 0.3s ease 0s;
 }
 
@@ -1537,24 +1537,52 @@ hr {
 /* Standard Search Bar Section */
 .search-container {
   width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 70px;
 }
 
-.search-container form .input-group {
+.search-container form {
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  max-width: 1100px;
+  background: #F6C0D0;
+  border: 2px solid #1E3231;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px 15px 0px;
 }
 
-.search-container form .input-group {
+.search-container form input {
+  margin-left: 20px;
   width: 80%;
-  justify-content: center;
-  align-items: center;
+  background-color: #F6C0D0;
+  border: none;
+  outline: none;
+  color: #1E3231;
+  font-size: 18px;
 }
 
+.search-container form input::placeholder {
+  color: #1E3231;
+}
+
+.search-container form button {
+  margin-right: 40px;
+  background-color: #F6C0D0;
+  border: none;
+}
+
+.search-container form button i {
+    font-size: 26px;
+    transition: all 0.3s ease 0s;
+}
+
+.search-container form button i:hover {
+  transform: scale(1.1);
+}
 
 /* Profile View Section  */
 .pv-container {
@@ -1797,7 +1825,7 @@ svg {
 }
 
 #b-three {
-  background-color: #8E7C93;
+  background-color: #485665;
 }
 
 /* Banner One Section  */
