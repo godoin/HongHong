@@ -647,12 +647,14 @@ hr {
   color: #fff;
   list-style: none;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 .footer .row .content-col .title {
   color: #F6C0D0;
   font-weight: 700;
   font-size: 15px;
+  font-weight: 400;
 }
 
 .footer-details {
