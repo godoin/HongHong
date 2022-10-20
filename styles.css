@@ -661,11 +661,55 @@ hr {
   align-items: center;
   text-align: center;
   width: 100%;
-  padding: 0 200px 0 200px;
+  padding: 0 200px 40px 200px;
+  margin: 15px auto;
 }
 
-.footer-details h5 {
-  color: #F6C0D0;
+.footer-details .left-content {
+  display: flex;
+}
+
+.footer-details .left-content i {
+  margin: 10px 5px;
+  font-size: 10px;
+}
+
+.footer-details .left-content h5 {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.footer-details .right-content {
+  display: flex;
+}
+
+.footer-details .right-content h5 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 4px 5px ;
+}
+
+.footer-details .right-content .icon {
+  margin-left: 10px;
+  min-width: 28px;
+  height: 28px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-details .right-content .icon:hover {
+  background-color: #d9d9d9;
+}
+
+.footer-details .right-content .icon i {
+  font-size: 12px;
 }
 
 .horizontal-line {
