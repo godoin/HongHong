@@ -2313,3 +2313,102 @@ svg {
   height: 50px;
   border: 1px solid #24252A;
 }
+
+/* Sidebar Section */
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background: #1E3231;
+  color: #8E7C93;
+}
+
+.sidebar ul li a {
+  list-style: none;
+  text-decoration: none;
+}
+.sidebar .left-content i {
+  font-size: 40px;
+}
+
+.sidebar .header .right-content {
+  margin-left: 10px;
+}
+.sidebar header {
+  margin: 20px 20px auto;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+  color: #F6C0D0;
+}
+
+.sidebar h2 {
+  margin: 0px 20px auto;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.sidebar h3 {
+  margin: 20px 20px auto;
+  font-weight: 400;
+}
+
+.sidebar ul {
+  margin-top: 30px;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 70px;
+  font-size: 20px;
+  color: #8E7C93;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #8E7C93;
+  transition: .4s;
+}
+
+.sidebar ul li.last {
+  border-bottom: 1px solid #8E7C93;
+}
+
+.sidebar ul li:hover a{
+  padding-left: 30px;
+}
+
+.sidebar ul i {
+  margin-right: 10px;
+}
+
+.bottom-content {
+  display: block;
+  margin-top: 220px;
+}
+
+.bottom-content h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.sidebar .btn {
+  background: #485665;
+  margin: 40px 20px auto;
+  padding-right: 80px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+.sidebar .btn:hover {
+  background-color: #8E7C93;
+}
+
+.sidebar .fa-right-from-bracket {
+  margin-right: 10px;
+  font-size: 16px;
+}
