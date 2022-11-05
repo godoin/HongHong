@@ -929,17 +929,17 @@ hr {
   color: #485665;
 }
 
-.container {
+.categories .container {
   margin: auto;
 }
 
-.container .row {
+.categories .container .row {
   display: flex;
   margin: 5%;
   justify-content: space-evenly;
 }
 
-.container .row .row-col {
+.categories .container .row .row-col {
   flex-basis: 23%;
   margin: 0 -70px;
   box-sizing: border-box;
@@ -949,23 +949,23 @@ hr {
   transition: all 0.3s ease 0s;
 }
 
-.container .row .row-col:hover {
+.categories .container .row .row-col:hover {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
 }
 
-.container .row .row-col i {
+.categories .container .row .row-col i {
   text-align: center;
   font-size: 90px;
   margin: 30px 0;
 }
 
-.container .row .row-col h5 {
+.categories .container .row .row-col h5 {
   text-align: center;
   font-size: 23px;
   font-weight: 400;
 }
 
-.container .row .row-col button {
+.categories .container .row .row-col button {
   margin: 40px 0;
   padding: 8px 40px;
 }
@@ -2318,7 +2318,7 @@ svg {
 }
 
 /* Sidebar Section */
-.container {
+.container-dashboard {
   display: flex;
 }
 .sidebar {
@@ -2449,11 +2449,6 @@ svg {
   color: #1E3231;
   margin: 6px 0 0 15px;
 }
-
-.main .main-top .description {
-  margin-top: 12px;
-}
-
 .main .main-top .description p{
   font-size: 24px;
   color: #485665;
@@ -2469,7 +2464,7 @@ svg {
 /* Overview Section */
 .overview {
   position: relative;
-  margin: 2%;
+  margin: 15px 20px 0px 20px;
   padding-top: 15px;
   border: 2px solid #AAAAAA;
 }
@@ -2496,7 +2491,7 @@ svg {
 }
 
 .overview .row {
-  margin: 2%;
+  margin: 1%;
   display: flex;
   margin-left: 45px;
 }
@@ -2509,7 +2504,6 @@ svg {
   flex-basis: 33%;
   padding: 40px 60px 40px 60px;
   margin-right: 20px;
-  width: 100%;
   border: 2px solid #AAAAAA;
   border-radius: 10px;
   transition: all 0.3s ease 0s;
@@ -2529,4 +2523,90 @@ svg {
   margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
+}
+
+/* User and Category Tables Section */
+.tables-container {
+  display: flex;
+  margin: 20px 20px 0px 20px;
+}
+
+.tables-container .left-table {
+  height: 270px;
+  width: 35%;
+  border: 2px solid #AAAAAA;
+  margin-right: 20px;
+  padding-top: 15px;
+}
+
+.tables-container .right-table {
+  height: 270px;
+  width: 71%;
+  border: 2px solid #AAAAAA;
+  padding-top: 15px;
+}
+
+.tables-container .icon {
+  margin: 0 10px 0 20px;
+  width: 24px;
+  height: 40px;
+  background: #1E3231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.tables-container h2 {
+  color: #1E3231;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.tables-container .left-table .categories-top {
+  display: flex;
+}
+
+.tables-container .right-table .user-top {
+  display: flex;
+}
+
+/* Categories Collection Section */
+.tables-container .table-content-one {
+  color: #1e321e;
+  border-collapse: collapse;  
+  margin: 10px auto;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.table-content-one thead tr {
+  text-align: left;
+}
+
+.table-content-one th, 
+.table-content-one td {
+  padding: 8px 35px;
+  width: 40%;
+  border-bottom: 1px solid #1e321e;
+}
+
+/* User Collection Section */
+.tables-container .table-content-two {
+  color: #1e321e;
+  border-collapse: collapse;  
+  margin: 10px auto;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.table-content-two thead tr {
+  text-align: left;
+}
+
+.table-content-two th, 
+.table-content-two td {
+  padding: 8px 40px;
+  width: 20%;
+  border-bottom: 1px solid #1e321e;
 }
