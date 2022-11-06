@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
+  <title>View Categories</title>
   <script src="https://kit.fontawesome.com/426c14851d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -42,8 +42,72 @@
         <div class="description">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div>
-  
       </section>
+
+      <!-- View Categories Section -->
+      <section class="view-categories">
+        <div class="category-header">
+          <div class="category-details">
+            <div class="icon"></div>
+            <h2>View Categories</h2>
+          </div>
+          <a href="add-category.html"><button class="btn btn-quarternary">Add Category</button></a>
+        </div>
+        
+        <div class="msg-container">
+          <div class="message">
+            <h2>Error and success message here</h2>
+          </div>
+        </div>
+
+        <!-- Categories Collection Section -->
+        <table class="table-content-one">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>name</th>
+              <th>date created</th>
+              <th>actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>lorem</td>
+              <td>lorem</td>
+              <td>
+                <div class="actions">
+                  <a href="update-category.html" class="btn btn-quarternary">Update</a>
+                  <a href="#" class="btn btn-danger">Delete</a></td>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>lorem</td>
+              <td>lorem</td>
+              <td>
+                <div class="actions">
+                  <a href="update-category.html" class="btn btn-quarternary">Update</a>
+                  <a href="#" class="btn btn-danger">Delete</a></td>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>lorem</td>
+              <td>lorem</td>
+              <td>
+                <div class="actions">
+                  <a href="update-category.html" class="btn btn-quarternary">Update</a>
+                  <a href="#" class="btn btn-danger">Delete</a></td>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
     </section>
 
 </body>

@@ -50,6 +50,22 @@ button {
   transition: all 0.3s ease 0s;
 }
 
+.btn-quarternary {
+  background-color: #485665;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-danger {
+  background-color: #972e38;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
 .btn-primary:hover {
   background-color: #485665;
 }
@@ -60,6 +76,14 @@ button {
 
 .btn-tertiary:hover {
   color: #fff;
+}
+
+.btn-quarternary:hover {
+  background-color: #8E7C93;
+}
+
+.btn-danger:hover {
+  background-color: #8E7C93;
 }
 
 .btn-large {
@@ -2578,17 +2602,18 @@ svg {
   margin: 10px auto;
   font-weight: 400;
   font-size: 25px;
+  width: 90%;
 }
 
-.table-content-one thead tr {
-  text-align: left;
+.tables-container .table-content-one thead tr {
+  text-align: center;
 }
 
-.table-content-one th, 
-.table-content-one td {
+.tables-container .table-content-one th, 
+.tables-container .table-content-one td {
   padding: 8px 35px;
-  width: 40%;
-  border-bottom: 1px solid #1e321e;
+  border-bottom: 2px solid #1e321e;
+  text-align: center;
 }
 
 /* User Collection Section */
@@ -2598,15 +2623,188 @@ svg {
   margin: 10px auto;
   font-weight: 400;
   font-size: 25px;
+  width: 95%;
 }
 
-.table-content-two thead tr {
-  text-align: left;
+.tables-container .table-content-two thead tr {
+  text-align: center;
+  color: #1e321e;
 }
 
-.table-content-two th, 
-.table-content-two td {
+.tables-container .table-content-two th, 
+.tables-container .table-content-two td {
   padding: 8px 40px;
-  width: 20%;
-  border-bottom: 1px solid #1e321e;
+  border-bottom: 2px solid #1e321e;
+  text-align: center;
+}
+
+/* View Categories Section */
+.view-categories {
+  position: relative;
+  margin: 15px 20px 0px 20px;
+  padding-top: 15px;
+  height: 470px;
+  border: 2px solid #AAAAAA;
+}
+
+.view-categories .category-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #AAAAAA;
+  padding-bottom: 20px;
+}
+
+.view-categories .category-header .category-details {
+  display: flex;
+  font-size: 20px;
+}
+
+.view-categories .category-header .category-details h2 {
+  font-weight: 500;
+  color: #1e321e;
+}
+
+.view-categories .category-header a {
+  margin-right: 20px;
+}
+
+.view-categories .icon {
+  margin: 0 10px 0 20px;
+  width: 24px;
+  height: 40px;
+  background: #1E3231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.view-categories .message {
+  margin: 2%;
+  background: #1E3231;
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+}
+
+.view-categories .message h2 {
+  font-weight: 400;
+}
+
+/* Categories Collection Section */
+.view-categories .table-content-one {
+  position: relative;
+  color: #1e321e;
+  border-collapse: collapse;  
+  margin: 10px auto;
+  font-weight: 400;
+  font-size: 22px;
+  width: 95%;
+}
+
+.view-categories .table-content-one thead tr {
+  text-align: center;
+}
+
+.view-categories .table-content-one th, 
+.view-categories .table-content-one td {
+  padding: 10px 50px;
+  border-bottom: 2px solid #1e321e;
+  text-align: center;
+}
+
+/* Add Categories Section  */
+.add-categories {
+  position: relative;
+  margin: 15px 20px 0px 20px;
+  padding-top: 15px;
+  height: 300px;
+  border: 2px solid #AAAAAA;
+}
+
+.add-categories .category-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #AAAAAA;
+  padding-bottom: 20px;
+}
+
+.add-categories .category-header .category-details {
+  display: flex;
+  font-size: 20px;
+}
+
+.add-categories .category-header .category-details h2 {
+  font-weight: 500;
+  color: #1e321e;
+}
+
+.add-categories .category-header a {
+  margin-right: 20px;
+}
+
+.add-categories .icon {
+  margin: 0 10px 0 20px;
+  width: 24px;
+  height: 40px;
+  background: #1E3231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.add-categories .msg-container {
+  width: 100%;
+}
+
+.add-categories .message {
+  margin: 2%;
+  background: #1E3231;
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+}
+
+.add-categories .message h2 {
+  font-weight: 400;
+}
+
+/* Category Form Section  */
+.add-categories form .field {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.add-categories form .field label {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.add-categories form .field input {
+  outline: none;
+}
+
+.add-categories form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  padding: 30px 0 30px 10px;
+  border: 2px solid #AAAAAA;
+  border-radius: 5px;
+}
+
+.add-categories form .button {
+  width: 100px;
+}
+
+.add-categories form .button input{
+  height: 45px;
+  border: none;
+  font-weight: 500;
+  background: #485665;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
 }
